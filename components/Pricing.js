@@ -1,5 +1,4 @@
 import React, { useMemo } from "react";
-import Image from "next/image";
 import Testimoni from "./Testimoni";
 import ButtonPrimary from "./misc/ButtonPrimary";
 import ButtonOutline from "./misc/ButtonOutline.";
@@ -46,7 +45,7 @@ const Pricing = () => {
                 }}
               >
                 <div className="p-4 lg:p-0 mt-6 lg:mt-16">
-                  <Image
+                  <img
                     src="/assets/Free.png"
                     width={145}
                     height={165}
@@ -90,7 +89,7 @@ const Pricing = () => {
                 }}
               >
               <div className="p-4 lg:p-0 mt-6 lg:mt-16">
-                <Image
+                <img
                   src="/assets/Standard.png"
                   width={145}
                   height={165}
@@ -137,7 +136,7 @@ const Pricing = () => {
                 }}
               >
               <div className="p-4 lg:p-0 mt-6 lg:mt-16">
-                <Image
+                <img
                   src="/assets/Premium.png"
                   width={145}
                   height={165}
