@@ -3,6 +3,8 @@ import LogoVPN from "../../public/assets/Logo.svg";
 import Facebook from "../../public/assets/Icon/facebook.svg";
 import Twitter from "../../public/assets/Icon/twitter.svg";
 import Instagram from "../../public/assets/Icon/instagram.svg";
+import Link from 'next/link';
+
 const Footer = () => {
   return (
     <div className="bg-white-300 pt-44 pb-24">
@@ -10,8 +12,7 @@ const Footer = () => {
         <div className="row-span-2 sm:col-span-4 col-start-1 col-end-4 sm:col-end-5 flex flex-col items-start ">
           <LogoVPN className="h-8 w-auto mb-6" />
           <p className="mb-4">
-            <strong className="font-medium">LaslesVPN</strong> is a private
-            virtual network that has unique features and has high security.
+            <strong className="font-medium">OgoVPN</strong> offers over 100+ secure servers worldwide, ensuring your online privacy and freedom. Browse anonymously and access global content with fast, reliable connections
           </p>
           <div className="flex w-full mt-2 mb-8 -mx-2">
             <div className="mx-2 bg-white-500 rounded-full items-center justify-center flex p-2 shadow-md">
@@ -24,7 +25,7 @@ const Footer = () => {
               <Instagram className="h-6 w-6" />
             </div>
           </div>
-          <p className="text-gray-400">©{new Date().getFullYear()} - LaslesVPN</p>
+          <p className="text-gray-400">©{new Date().getFullYear()} - OgoVPN</p>
         </div>
         <div className=" row-span-2 sm:col-span-2 sm:col-start-7 sm:col-end-9 flex flex-col">
           <p className="text-black-600 mb-4 font-medium text-lg">Product</p>
@@ -65,10 +66,10 @@ const Footer = () => {
               About Us{" "}
             </li>
             <li className="my-2 hover:text-orange-500 cursor-pointer transition-all">
-              Privacy Policy{" "}
+            <Link href="/privacy-policy">Privacy Policy</Link>
             </li>
             <li className="my-2 hover:text-orange-500 cursor-pointer transition-all">
-              Terms of Service{" "}
+            <Link href="/terms-of-service">Terms of Service</Link>
             </li>
           </ul>
         </div>
