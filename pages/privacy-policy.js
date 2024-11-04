@@ -21,7 +21,7 @@ const PrivacyPolicy = () => {
       <h3>General Information</h3>
       <p>
         OgoVPN collects minimal information needed to provide VPN services. This may include
-        device type, operating system, general location data, and interaction logs.
+        device ID and operating system
         We do not store IP addresses or browsing histories.
       </p>
 
